@@ -1,11 +1,19 @@
 # Ruby-BBCode
 
-[![gem version](https://badge.fury.io/rb/ruby-bbcode.svg)](https://badge.fury.io/rb/ruby-bbcode) [![Build Status](https://travis-ci.org/veger/ruby-bbcode.svg?branch=master)](https://travis-ci.org/veger/ruby-bbcode) [![Code Coverage](https://coveralls.io/repos/github/veger/ruby-bbcode/badge.svg?branch=master)](https://coveralls.io/github/veger/ruby-bbcode?branch=master)
-
 This gem adds support for [BBCode](http:/www.bbcode.org/) to Ruby. The BBCode is parsed by a parser before converted to HTML, allowing to convert nested BBCode tags in strings to their correct HTML equivalent. The parser also checks whether the BBCode is valid and gives errors for incorrect BBCode texts.
+
 Additionally, annotations can be added to the BBCode string the showing errors that are present, assuming there are any errors.
 
 The parser recognizes all [official tags](http://www.bbcode.org/reference.php) and allows to easily extend this set with custom tags.
+
+# Ruby-BBCode Extensions and Changes
+
+This fork makes a number changes from the original gem:
+
+- Added custom ```[ICODE]``` bbcode tag support.
+- Added `<br>` to the top of the ```[CODE]``` tags.
+- Changed ```[font]``` tags to ```<em>``` tags.
+
 
 ## Examples
 
@@ -38,12 +46,7 @@ $(".bbcode_error").tooltip({
 
 Add the following line to the Gemfile of your application:
 ```ruby
-gem 'ruby-bbcode'
-```
-
-Or to use the source code from the repository:
-```ruby
-gem 'ruby-bbcode', :git => 'git://github.com/veger/ruby-bbcode.git'
+gem 'ruby-bbcode',git: 'https://github.com/unixneo/ruby-bbcode'
 ```
 
 Run
@@ -60,6 +63,8 @@ _Note_: Do not forget to restart your server!
 A big thanks to [@TheNotary](https://github.com/TheNotary) for all contributions he made to this project!
 
 Some of the ideas and the tests came from [bb-ruby](https://github.com/cpjolicoeur/bb-ruby) of Craig P Jolicoeur.
+
+Thanks to [@veger](https://github.com/veger) for his original code.
 
 ## License
 
