@@ -1,6 +1,11 @@
 Upcoming
 --------
 
+Version 2.1.2 - 26-Aug-2020
+---------------------------
+
+* Custom changes (See README)
+
 Version 2.1.1 - 27-May-2020
 ---------------------------
 
