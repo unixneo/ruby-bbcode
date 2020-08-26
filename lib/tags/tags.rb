@@ -5,6 +5,11 @@ module RubyBBCode
     # All of these entrys are represented as @dictionary in the classes (or as the variable tags)
     # A single item from this file (eg the :b entry) is refered to as a @definition
     @@tags = {
+      :font => {
+        html_open: '<em>', html_close: '</em>',
+        description: 'Change font tags to <em> tags',
+        example: 'This is <em>was font tags before<em>.'
+      },
       :b => {
         html_open: '<strong>', html_close: '</strong>',
         description: 'Make text bold',
@@ -44,7 +49,7 @@ module RubyBBCode
         block_tag: false
       },
       :code => {
-        html_open: '<pre>', html_close: '</pre>',
+        html_open: '<br><pre>', html_close: '</pre>',
         description: 'Code block with mono-spaced text',
         example: 'This is [code]mono-spaced code[/code].',
         block_tag: true
