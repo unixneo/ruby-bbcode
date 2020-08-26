@@ -37,6 +37,12 @@ module RubyBBCode
         example: '[ul][li]List item[/li][li]Another list item[/li][/ul].',
         only_allow: [:li, '*'.to_sym]
       },
+      :icode => {
+        html_open: '<pre>', html_close: '</pre>',
+        description: 'Code block with mono-spaced text',
+        example: 'This is [icode]mono-spaced code[/icode].',
+        block_tag: true
+      },
       :code => {
         html_open: '<pre>', html_close: '</pre>',
         description: 'Code block with mono-spaced text',
