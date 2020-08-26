@@ -5,11 +5,6 @@ module RubyBBCode
     # All of these entrys are represented as @dictionary in the classes (or as the variable tags)
     # A single item from this file (eg the :b entry) is refered to as a @definition
     @@tags = {
-      :font => {
-        html_open:  html_close: ,
-        description: 'Strip font tags',
-        example: 'This is [font]stripped out[/font].'
-      },
       :b => {
         html_open: '<strong>', html_close: '</strong>',
         description: 'Make text bold',
@@ -43,13 +38,13 @@ module RubyBBCode
         only_allow: [:li, '*'.to_sym]
       },
       :icode => {
-        html_open: '<pre style="display: inline !important;">', html_close: '</pre>',
+        html_open: '<pre>', html_close: '</pre>',
         description: 'Code block with mono-spaced text',
         example: 'This is [icode]mono-spaced code[/icode].',
         block_tag: false
       },
       :code => {
-        html_open: '<pre style="display:inline !important;">', html_close: '</pre>',
+        html_open: '<pre>', html_close: '</pre>',
         description: 'Code block with mono-spaced text',
         example: 'This is [code]mono-spaced code[/code].',
         block_tag: true
