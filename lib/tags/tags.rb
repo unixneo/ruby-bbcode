@@ -43,7 +43,7 @@ module RubyBBCode
         only_allow: [:li, '*'.to_sym]
       },
       :icode => {
-        html_open: '<pre>', html_close: '</pre>',
+        html_open: '<pre class="neo-icode-tag">', html_close: '</pre>',
         description: 'Code block with mono-spaced text',
         example: 'This is [icode]mono-spaced code[/icode].',
         block_tag: false
