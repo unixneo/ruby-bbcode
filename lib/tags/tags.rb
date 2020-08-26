@@ -49,7 +49,7 @@ module RubyBBCode
         block_tag: false
       },
       :code => {
-        html_open: '<br><pre>', html_close: '</pre>',
+        html_open: '<br><pre class="neo-code-tag">', html_close: '</pre>',
         description: 'Code block with mono-spaced text',
         example: 'This is [code]mono-spaced code[/code].',
         block_tag: true
