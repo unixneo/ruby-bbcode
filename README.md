@@ -10,8 +10,8 @@ The parser recognizes all [official tags](http://www.bbcode.org/reference.php) a
 
 This fork makes a number changes from the original gem:
 
-- Added custom ```[ICODE]``` bbcode tag support.
-- Added `<br>` to the top of the ```[CODE]``` tags.
+- Added custom ```[ICODE]``` bbcode tag support and ```.neo-icode-tag``` class.
+- Added ```.neo-code-tag``` class to ```[CODE]``` tags.
 - Changed ```[font]``` tags to ```<em>``` tags.
 
 
