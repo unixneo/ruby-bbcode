@@ -126,12 +126,7 @@ module RubyBBCode
         quick_param_format_description: 'The size parameter \'%param%\' is incorrect, a number is expected',
         param_tokens: [{ token: :size }]
       },
-      :color_working => {
-        html_open: '', html_close: '',
-        description: 'Strip out ```[color]``` tags',
-        example: 'This is [color] stripped out [/color].'
-      },
-      :color_comment_out => {
+      :color => {
         html_open: '<span style="color: %color%;">', html_close: '</span>',
         description: 'Change the color of the text (commented out)',
         example: '[color=red]This is red[/color]',
