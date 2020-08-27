@@ -13,6 +13,7 @@ This fork makes a number changes from the original gem:
 - Added custom ```[ICODE]``` bbcode tag support and ```.neo-icode-tag``` class.
 - Added ```.neo-code-tag``` class to ```[CODE]``` tags.
 - Changed ```[font]``` tags to ```<em>``` tags.
+- Removed  ```[indent]``` tags.
 
 
 ## Examples
