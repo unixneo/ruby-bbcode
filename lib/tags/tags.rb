@@ -126,7 +126,7 @@ module RubyBBCode
         quick_param_format_description: 'The size parameter \'%param%\' is incorrect, a number is expected',
         param_tokens: [{ token: :size }]
       },
-      :color => {
+      :color_working => {
         html_open: '', html_close: '',
         description: 'Strip out ```[color]``` tags',
         example: 'This is [color] stripped out [/color].'
