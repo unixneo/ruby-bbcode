@@ -17,7 +17,7 @@ This fork makes a number changes from the original gem:
 
 # Know Bugs
 
-- The tag sifter is too greedy and it matches string which are not tags, raising an error, for example:
+- The tag sifter is too greedy and it matches strings which are not tags, raising an error, for example:
 
 ```
 Tag [color] must have 'color' parameter, Tag [color] must have 'color' parameter, [color] not closed, [color] not closed
