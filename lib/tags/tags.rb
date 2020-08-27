@@ -5,6 +5,11 @@ module RubyBBCode
     # All of these entrys are represented as @dictionary in the classes (or as the variable tags)
     # A single item from this file (eg the :b entry) is refered to as a @definition
     @@tags = {
+      :indent => {
+        html_open: '', html_close: '',
+        description: 'Strip indent tags',
+        example: 'This [indent] tag was stripped out[/indent].'
+      },
       :font => {
         html_open: '<em>', html_close: '</em>',
         description: 'Change font tags to <em> tags',
